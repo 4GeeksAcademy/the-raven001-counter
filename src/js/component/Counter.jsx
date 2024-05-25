@@ -24,7 +24,7 @@ const Counter = () => {
           <h1>Seconds Counter</h1>
         </div>
         <div className="card-body">
-          <h5 className="card-title text-white fs-1 d-flex justify-content-center">
+          <h5 className="card-title text-white fs-1 d-flex justify-content-center align-items-center">
             <span className="boxNumber clock">
               <i className="far fa-clock"></i>
             </span>
