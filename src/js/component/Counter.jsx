@@ -13,9 +13,9 @@ const Counter = () => {
     interval = setInterval(seconder, 1000);
   }
 
-  const formattedCount = theVariable1.toString().padStart(7, "0");
+  const formattedCount = theVariable1.toString().padStart(6, "0");
 
-  const displayformattedCount = formattedCount.split("")
+  const displayformattedCount = formattedCount.split("");
 
   return (
     <div>
@@ -24,12 +24,17 @@ const Counter = () => {
           <h1>Seconds Counter</h1>
         </div>
         <div className="card-body">
-          
           <h5 className="card-title text-white fs-1 d-flex justify-content-center">
-            <span><i class="fa-regular fa-clock"></i></span>
-            
+            <span className="boxNumber clock">
+              <i className="far fa-clock"></i>
+            </span>
+
             {displayformattedCount.map((element) => {
-              return (<div><span className="boxNumber">{element}</span></div>)
+              return (
+                <div>
+                  <span className="boxNumber">{element}</span>
+                </div>
+              );
             })}
           </h5>
         </div>
